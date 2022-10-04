@@ -80,6 +80,9 @@ ul li {
 }
 
 /* navbar */
+.navbar-wrapper {
+  padding-bottom: 9px;
+}
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -99,6 +102,13 @@ ul li {
   border-bottom: 2px solid;
   border-color: #fcbf1b;
 }
+
+/* banner section */
+
+
+
+
+
 
 /* Responsive for phone */
 
