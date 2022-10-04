@@ -26,6 +26,10 @@ ul li {
   font-weight: 400;
   font-size: 11px;
 }
+.f-13 {
+  font-weight: 400;
+  font-size: 13px;
+}
 .f-14 {
   font-weight: 400;
   font-size: 14px;
@@ -34,8 +38,23 @@ ul li {
   font-weight: 400;
   font-size: 16px;
 }
+.f-22 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.f-29 {
+  font-weight: 400;
+  font-size: 29px;
+}
+.f-60 {
+  font-weight: 400;
+  font-size: 60px;
+}
 
 /* colors classes*/
+.color-fff {
+  color: #ffffff;
+}
 .color-222 {
   color: #222222;
 }
@@ -104,11 +123,82 @@ ul li {
 }
 
 /* banner section */
-
-
-
-
-
+.banner-sectioin {
+}
+.main-banner {
+  background-image: url(../images/air-freight.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-banner-details {
+  text-align: center;
+  padding: 229px 428px 49px 428px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.main-banner > div {
+  position: relative;
+}
+.main-banner-details::after {
+  content: url("../images/right-arrow.png");
+  position: absolute;
+  right: 305px;
+  top: 230px;
+}
+.main-banner-details::before {
+  content: url("../images/left-arrow.png");
+  position: absolute;
+  left: 305px;
+  top: 230px;
+}
+.main-banner-details h1 {
+  line-height: 66px;
+  padding-bottom: 29px;
+}
+.main-banner-details p {
+  line-height: 36px;
+  padding-bottom: 46px;
+}
+.view-offer-btn {
+  background: #fcbf1b;
+  border-radius: 2px;
+  padding: 16px 26px;
+  border: none;
+}
+.sub-banners {
+  display: flex;
+  gap: 6px;
+  padding-top: 6px;
+}
+.sub-banner-1 {
+  background-image: url(../images/cargo-storage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.sub-banner-2 {
+  background-image: url(../images/ship-transport.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.sub-banner-3 {
+  background-image: url(../images/port.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.sub-banner-1-text {
+  padding: 108px 116px 65px 116px;
+  text-align: center;
+}
+.sub-banner-2-text {
+  padding: 108px 145px 65px 145px;
+  text-align: center;
+}
+.sub-banner-3-text {
+  padding: 108px 144px 65px 143px;
+  text-align: center;
+}
 
 /* Responsive for phone */
 
@@ -142,8 +232,67 @@ ul li {
   .nav-links li {
     border: none;
   }
-
   .nav-links li:last-child {
     border: none;
+  }
+
+  /* banner sectioin */
+  .banner-sectioin {
+  }
+  .banner-wrapper {
+  }
+  .main-banner {
+  }
+  .main-banner-details {
+    padding: 205.76px 59.78px 135.74px 57px;
+  }
+  .main-banner-details h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 66px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 22.99px;
+  }
+  .main-banner-details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 24.51px;
+  }
+  .view-offer-btn {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #222222;
+  }
+  .sub-banners {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .sub-banner-1 {
+  }
+  .sub-banner-2 {
+  }
+  .sub-banner-3 {
+  }
+  .sub-banner-1-text {
+    padding: 98px 65px 25.88px 65px;
+  }
+  .sub-banner-2-text {
+    padding: 108px 95.5px 16.96px 95.5px;
+  }
+  .sub-banner-3-text {
+    padding: 108px 92.5px 15.82px 92.5px;
+  }
+  .main-banner-details::after {
+    right: 31.5px;
+    /* width: 11px; */
+  }
+  .main-banner-details::before {
+    left: 31.5px;
   }
 }
