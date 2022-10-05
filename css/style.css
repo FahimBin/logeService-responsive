@@ -319,11 +319,10 @@ ul li {
 }
 
 /* vehicle fleet section */
-.vehicle-fleet-section {
-}
+/* no styles for vehicle fleet section */
 
 /* news and info section */
-.news-and-info-section > .services-wrapper{
+.news-and-info-section > .services-wrapper {
   border: none;
 }
 .news-cards {
@@ -346,6 +345,58 @@ ul li {
   line-height: 18px;
   color: #eda71d;
   padding-bottom: 23px;
+}
+
+/* footer */
+footer {
+  background-image: url(../images/footer-bg.png);
+}
+.footer-wrapper div {
+  color: #ffffff;
+  /* flex: 1; */
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 0 0;
+}
+.logo-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo-part div:last-child {
+  display: flex;
+  gap: 26.15px;
+}
+.important-links-1 ul li,
+.important-links-2 ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 22px;
+}
+.contacts a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+.contacts p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #7f7f7f;
+  padding-bottom: 25px;
+}
+.copyright-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #7f7f7f;
+  padding-top: 112px;
+  padding-bottom: 29px;
 }
 /* Responsive for phone */
 
@@ -492,17 +543,24 @@ ul li {
 
   /* news and info section */
 
-  .news-and-info-section {
-  }
-
   .news-cards {
     flex-direction: column;
+    padding-bottom: 60px;
   }
   .news-card {
     padding-left: 25px;
   }
-  .news-card p {
+
+  /* footer */
+  .footer-wrapper {
+    flex-direction: column;
+    padding-left: 22.88px;
   }
-  .news-card h6 {
+  .logo-part {
+    gap: 40px;
+    padding-bottom: 60px;
+  }
+  .copyright-text {
+    text-align: center;
   }
 }
