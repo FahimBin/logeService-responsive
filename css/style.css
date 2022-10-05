@@ -109,6 +109,10 @@ ul li {
   padding: 8.5px;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* navbar */
 .navbar-wrapper {
   padding-bottom: 9px;
@@ -402,18 +406,18 @@ footer {
 /* about page */
 
 /* CURRENT PAGE SECTION */
-.current-page-section{
-  background-image: url('../images/current-page-banner.png');
+.current-page-section {
+  background-image: url("../images/current-page-banner.png");
 }
 .current-page-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 33px 0 35px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0 35px 0;
 }
-.page-path a{
-
+.page-path a {
 }
-.current-page{}
+.current-page {
+}
 /* loge service section about page */
 .loge-service-part-2 {
 }
@@ -446,7 +450,7 @@ footer {
 .service-time-from ul li {
   padding-bottom: 17px;
 }
-/* ....................................................................................................................................... */
+
 /* Responsive for phone */
 
 @media only screen and (max-width: 430px) {
@@ -459,14 +463,24 @@ footer {
   /* home page */
   /* topbar */
   .topbar-wrapper {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 23.3px 15.6px;
   }
-  .left-contents {
-    padding-bottom: 30px;
-  }
+
   .right-contents {
     gap: 7px;
+  }
+
+  .phone-contact,
+  .quote {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    background: #fcbf1b;
+    border-radius: 2px;
+    padding: 8.5px;
   }
 
   /* navbar */
