@@ -414,13 +414,10 @@ footer {
   justify-content: space-between;
   padding: 33px 0 35px 0;
 }
-.page-path a {
-}
-.current-page {
-}
+
+
 /* loge service section about page */
-.loge-service-part-2 {
-}
+
 .service-description h4 {
   padding-bottom: 31px;
 }
@@ -621,4 +618,28 @@ footer {
   .copyright-text {
     text-align: center;
   }
+
+  /*....................... about page............... */
+
+  /* current page section */
+  .current-page-wrapper {
+    flex-direction: column;
+    gap: 13.6px;
+    padding-left: 15.06px;
+  }
+
+  /* loge service */
+  .service-description{
+    order: 2;
+  }
+  .service-time-from{
+    order: 3;
+  }
+  .train-part{
+    order: 1;
+  }
+  .train-part img{
+    width: 100%;
+  }
+
 }
