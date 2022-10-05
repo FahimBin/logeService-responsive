@@ -323,7 +323,8 @@ ul li {
 }
 
 /* news and info section */
-.news-and-info-section {
+.news-and-info-section > .services-wrapper{
+  border: none;
 }
 .news-cards {
   display: flex;
