@@ -484,7 +484,7 @@ footer {
   }
 
   /* navbar */
-  .navbar-wrapper nav{
+  .navbar-wrapper nav {
     display: none;
   }
 
@@ -581,6 +581,10 @@ footer {
   .service-card:nth-child(2) {
     display: block;
   }
+
+  .service-card img, .news-card img {
+    width: 100%;
+  }
   .services-cards::before {
     content: url("../images/circle-arrow-left.png");
     position: absolute;
@@ -602,7 +606,7 @@ footer {
     padding-bottom: 60px;
   }
   .news-card {
-    padding-left: 25px;
+    padding:0 25px ;
   }
 
   /* footer */
