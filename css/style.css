@@ -297,7 +297,7 @@ ul li {
 .services-cards::after {
   content: url("../images/circle-arrow-right.png");
   position: absolute;
-  right: 9%;
+  right: 9.5%;
   top: 30%;
 }
 .service-card img {
@@ -316,6 +316,10 @@ ul li {
   padding: 10px 14px;
   border-style: none;
   text-transform: uppercase;
+}
+
+/* vehicle fleet section */
+.vehicle-fleet-section {
 }
 
 /* Responsive for phone */
@@ -421,6 +425,10 @@ ul li {
   }
 
   /* services section */
+  .services-wrapper {
+    padding-bottom: 0px;
+   
+}
   .services-header {
     padding-top: 50.47px;
     padding-bottom: 35.5px;
@@ -432,14 +440,11 @@ ul li {
     align-items: flex-start;
     gap: 23.53px;
   }
-  
-
   .services-cards {
     flex-direction: column;
     padding-left: 25px;
     padding-right: 30.5px;
     padding-bottom: 50.37px;
-    border-bottom: 10px solid rgba(0, 0, 0, 0.08);
   }
   .service-card {
     display: none;
