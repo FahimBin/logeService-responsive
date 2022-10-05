@@ -398,6 +398,55 @@ footer {
   padding-top: 112px;
   padding-bottom: 29px;
 }
+
+/* about page */
+
+/* CURRENT PAGE SECTION */
+.current-page-section{
+  background-image: url('../images/current-page-banner.png');
+}
+.current-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0 35px 0;
+}
+.page-path a{
+
+}
+.current-page{}
+/* loge service section about page */
+.loge-service-part-2 {
+}
+.service-description h4 {
+  padding-bottom: 31px;
+}
+.service-description p {
+  padding-bottom: 20px;
+}
+
+.service-time-from h1::before {
+  content: "est.";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  bottom: 25px;
+  position: relative;
+  padding-right: 5px;
+}
+.service-time-from h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fcbf1b;
+  padding-bottom: 40px;
+}
+.service-time-from ul {
+  padding-left: 30px;
+}
+.service-time-from ul li {
+  padding-bottom: 17px;
+}
+/* ....................................................................................................................................... */
 /* Responsive for phone */
 
 @media only screen and (max-width: 430px) {
