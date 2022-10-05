@@ -42,9 +42,17 @@ ul li {
   font-weight: 400;
   font-size: 22px;
 }
+.f-23 {
+  font-weight: 400;
+  font-size: 22px;
+}
 .f-29 {
   font-weight: 400;
   font-size: 29px;
+}
+.f-34 {
+  font-weight: 400;
+  font-size: 34px;
 }
 .f-60 {
   font-weight: 400;
@@ -200,6 +208,56 @@ ul li {
   text-align: center;
 }
 
+/* loge-service-section */
+.loge-service-section {
+  padding-top: 87px;
+}
+.loge-service-part-1 {
+  display: flex;
+  gap: 187px;
+  align-items: center;
+}
+.loge-service-part-1 div p {
+  border-left: 2px solid #fcbf1b;
+  padding-left: 24px;
+}
+.loge-service-part-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 107.17px;
+  padding-bottom: 96px;
+}
+.loge-service-part-2 div {
+  flex: 1;
+  padding-right: 20px;
+}
+.service-heading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #222222;
+  padding-top: 20px;
+  padding-bottom: 11px;
+}
+.service-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f7f7f;
+}
+.service-key-points ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #222222;
+  padding-bottom: 17px;
+}
+.service-key-points ul li::before {
+  content: url("../images/check.png");
+  display: inline-block;
+  padding-right: 13.34px;
+}
+
 /* Responsive for phone */
 
 @media only screen and (max-width: 430px) {
@@ -237,12 +295,7 @@ ul li {
   }
 
   /* banner sectioin */
-  .banner-sectioin {
-  }
-  .banner-wrapper {
-  }
-  .main-banner {
-  }
+
   .main-banner-details {
     padding: 205.76px 59.78px 135.74px 57px;
   }
@@ -273,12 +326,7 @@ ul li {
     gap: 10px;
     padding-top: 10px;
   }
-  .sub-banner-1 {
-  }
-  .sub-banner-2 {
-  }
-  .sub-banner-3 {
-  }
+
   .sub-banner-1-text {
     padding: 98px 65px 25.88px 65px;
   }
@@ -290,9 +338,25 @@ ul li {
   }
   .main-banner-details::after {
     right: 31.5px;
-    /* width: 11px; */
   }
   .main-banner-details::before {
     left: 31.5px;
+  }
+
+  /* loge-service-section */
+  .loge-service-section {
+    padding-top: 40.22px;
+  }
+  .loge-service-part-1 {
+    flex-direction: column;
+    gap: 20.22px;
+    align-items: flex-start;
+    padding-left: 21.5px;
+  }
+  .loge-service-part-2 {
+    padding-top: 39.82px;
+    flex-direction: column;
+    padding-left: 21.5px;
+    gap: 30.82px;
   }
 }
