@@ -109,6 +109,10 @@ ul li {
   padding: 8.5px;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* navbar */
 .navbar-wrapper {
   padding-bottom: 9px;
@@ -410,13 +414,10 @@ footer {
   justify-content: space-between;
   padding: 33px 0 35px 0;
 }
-.page-path a {
-}
-.current-page {
-}
+
+
 /* loge service section about page */
-.loge-service-part-2 {
-}
+
 .service-description h4 {
   padding-bottom: 31px;
 }
@@ -446,7 +447,7 @@ footer {
 .service-time-from ul li {
   padding-bottom: 17px;
 }
-/* ....................................................................................................................................... */
+
 /* Responsive for phone */
 
 @media only screen and (max-width: 430px) {
@@ -459,24 +460,28 @@ footer {
   /* home page */
   /* topbar */
   .topbar-wrapper {
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 23.3px 15.6px;
   }
 
   .right-contents {
     gap: 7px;
   }
-  .quote,
-  .phone-contact {
+
+  .phone-contact,
+  .quote {
     display: none;
   }
   .hamburger {
-    padding: 8.5px;
+    display: block;
     background: #fcbf1b;
     border-radius: 2px;
+    padding: 8.5px;
   }
 
   /* navbar */
-  .navbar-wrapper {
+  .navbar-wrapper nav {
     display: none;
   }
 
@@ -573,6 +578,10 @@ footer {
   .service-card:nth-child(2) {
     display: block;
   }
+
+  .service-card img, .news-card img {
+    width: 100%;
+  }
   .services-cards::before {
     content: url("../images/circle-arrow-left.png");
     position: absolute;
@@ -594,7 +603,7 @@ footer {
     padding-bottom: 60px;
   }
   .news-card {
-    padding-left: 25px;
+    padding:0 25px ;
   }
 
   /* footer */
