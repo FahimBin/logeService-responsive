@@ -54,34 +54,9 @@ a {
   border-radius: 2px;
   padding: 8.5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hamburger {
+  display: none;
+}
 
 /* Responsive for phone */
 
@@ -95,13 +70,22 @@ a {
   /* home page */
   /* topbar */
   .topbar-wrapper {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 23.3px 15.6px;
   }
-  .left-contents {
-    padding-bottom: 30px;
-  }
+
   .right-contents {
     gap: 7px;
+  }
+  .phone-contact,
+  .quote {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    background: #fcbf1b;
+    border-radius: 2px;
+    padding: 8.5px;
   }
 }
