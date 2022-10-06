@@ -1,5 +1,21 @@
 
 
 
+ <div class="services-header">
+                <div class="container">
+                    <div>
+                    <h2 class="f-34 color-222">Our services</h2>
+                </div>
+                <div>
+                    <p>A full range of quality logistic services.</p>
+                </div>
+                </div>
+            </div>
 
 
+about-current-page-and-loge-service-section
+
+.service-card img {
+
+    width: 100%;
+}

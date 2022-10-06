@@ -21,6 +21,9 @@ a {
 ul li {
   list-style-type: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 /* fonts styles */
 .f-11 {
   font-weight: 400;
@@ -415,9 +418,10 @@ footer {
   padding: 33px 0 35px 0;
 }
 
-
 /* loge service section about page */
-
+.loge-service-section {
+  border-bottom: 10px solid rgba(0, 0, 0, 0.08);
+}
 .service-description h4 {
   padding-bottom: 31px;
 }
@@ -446,6 +450,37 @@ footer {
 }
 .service-time-from ul li {
   padding-bottom: 17px;
+}
+/* Choose us section */
+.choose-us-section {
+  border-bottom: 10px solid rgba(0, 0, 0, 0.08);
+  padding-top: 100px;
+}
+.choose-us-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 52px;
+}
+.choose-us-heading div:nth-child(2) {
+  border-left: 2px solid #fcbf1b;
+  padding-left: 14px;
+}
+
+.choose-us-cards {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.choose-us-card {
+  /* border: 1px solid red; */
+  width: 30%;
+}
+.choose-us-card h4 {
+  padding-bottom: 11px;
 }
 
 /* Responsive for phone */
@@ -579,7 +614,8 @@ footer {
     display: block;
   }
 
-  .service-card img, .news-card img {
+  .service-card img,
+  .news-card img {
     width: 100%;
   }
   .services-cards::before {
@@ -603,7 +639,7 @@ footer {
     padding-bottom: 60px;
   }
   .news-card {
-    padding:0 25px ;
+    padding: 0 25px;
   }
 
   /* footer */
@@ -629,17 +665,42 @@ footer {
   }
 
   /* loge service */
-  .service-description{
+  .service-description {
     order: 2;
   }
-  .service-time-from{
+  .service-time-from {
     order: 3;
   }
-  .train-part{
+  .train-part {
     order: 1;
   }
-  .train-part img{
+  .train-part img {
     width: 100%;
   }
 
+  /* choose us section */
+  .choose-us-section {
+    border: none;
+    padding-bottom: 50px;
+    padding-top: 43.33px;
+  }
+  .choose-us-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+
+  .choose-us-heading div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 31px;
+  }
+  .choose-us-cards {
+    gap: 0;
+    padding: 0;
+  }
+  .choose-us-card {
+    padding: 40px 29px 20px 43px;
+    width: 100%;
+  }
 }
