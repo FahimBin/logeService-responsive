@@ -518,9 +518,9 @@ footer {
 .specialization-section {
   padding-top: 40.22px;
 }
-.specialization-section .container .loge-service-part-2{
+.specialization-section .container .loge-service-part-2 {
   padding-top: 91px;
-  padding-top: 63px;
+  padding-bottom: 63px;
 }
 .specialization-links {
   display: flex;
@@ -780,9 +780,13 @@ footer {
   .specialization-links {
     flex-wrap: wrap;
   }
-  .specialization-text, .specialization-links a {
+  .specialization-text,
+  .specialization-links a {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+  }
+  .specialization-section .container .loge-service-part-2 {
+    padding-top: 39px;
   }
 }
