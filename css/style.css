@@ -483,6 +483,35 @@ footer {
   padding-bottom: 11px;
 }
 
+/* parners section */
+.partners-section {
+  padding-top: 86px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.partners {
+  display: flex;
+
+  padding-top: 90px;
+  gap: 30px;
+}
+.partner {
+  padding: 11px 23px 12px 22px;
+  background: #f5f5f5;
+}
+.partners::before {
+  content: url("../images/circle-arrow-left.png");
+  position: absolute;
+  bottom: 125px;
+  left: 317px;
+}
+.partners::after {
+  content: url("../images/circle-arrow-right.png");
+  position: absolute;
+  bottom: 125px;
+  right: 317px;
+}
+
 /* Responsive for phone */
 
 @media only screen and (max-width: 430px) {
@@ -703,4 +732,29 @@ footer {
     padding: 40px 29px 20px 43px;
     width: 100%;
   }
+  /* partners section */
+  .partners{
+    padding: 40px 28px;
+  }
+  .partner:nth-last-child(-n + 3) {
+    display: none;
+  }
+  .partner {
+    padding: 7.12px 14.24px;
+  }
+  .partner img{
+    width: 100%;
+  }
+  .partners::before {
+    content: url("../images/circle-arrow-left.png");
+    position: absolute;
+    bottom: 145px;
+    left: 12px;
+}
+.partners::after {
+    content: url("../images/circle-arrow-right.png");
+    position: absolute;
+    bottom: 145px;
+    right: 12px;
+}
 }
