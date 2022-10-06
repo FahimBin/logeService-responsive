@@ -514,7 +514,14 @@ footer {
 
 /* .......................................................logistic page....................................... */
 
-/*  */
+/* specialization section */
+.specialization-section {
+  padding-top: 40.22px;
+}
+.specialization-links {
+  display: flex;
+  gap: 50px;
+}
 
 /* Responsive for phone */
 
@@ -737,7 +744,7 @@ footer {
     width: 100%;
   }
   /* partners section */
-  .partners{
+  .partners {
     padding: 40px 28px;
   }
   .partner:nth-last-child(-n + 3) {
@@ -746,7 +753,7 @@ footer {
   .partner {
     padding: 7.12px 14.24px;
   }
-  .partner img{
+  .partner img {
     width: 100%;
   }
   .partners::before {
@@ -754,11 +761,24 @@ footer {
     position: absolute;
     bottom: 145px;
     left: 12px;
-}
-.partners::after {
+  }
+  .partners::after {
     content: url("../images/circle-arrow-right.png");
     position: absolute;
     bottom: 145px;
     right: 12px;
-}
+  }
+
+  /* ..................................logistic page........... */
+
+  /* specialization section */
+
+  .specialization-links {
+    flex-wrap: wrap;
+  }
+  .specialization-text, .specialization-links a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
